@@ -1,0 +1,110 @@
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1{
+  visibility: hidden;
+  height: 0px;
+  margin: 0;
+
+}
+
+.nav-wrapper{
+  background-color: #33227F !important;
+
+}
+
+/* .hero_wrapper{
+  background-color: black;
+  float:left;
+  z-index: 1 !important;
+  min-height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+
+} */
+
+.hero_image{
+  background-image: url("../assets/black-school-stock.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  z-index: 99;
+}
+
+.section_height{
+  min-height: 450px;
+
+}
+
+.main_tagline{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about_text{
+  padding: 50px;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+
+}
+
+.dropdown_button_pos{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#dropdown1 {
+  min-width: 500px !important;
+}
+
+.page-footer{
+  background-color: #33227F !important;
+}
+
+.contact_title{
+  margin-top: 150px;
+  text-align: center;
+  font-size: 24px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: "Roboto",sans-serif;
+  font-style: bold;
+
+}
+
+.contact_text{
+  text-align: center;
+  font-size: 16px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
