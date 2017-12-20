@@ -37,18 +37,35 @@ h1{
 .nav-wrapper{
   background-color: #33227F !important;
 
+
 }
 
-/* .hero_wrapper{
-  background-color: black;
-  float:left;
-  z-index: 1 !important;
+
+/* ul{
+  padding-top: 12px;
+  padding-bottom: 12px;
+} */
+
+.logo_align{
+  text-align: center;
+}
+/* .brainchild_logo{
+  max-height: 450px;
+  margin: 0;
+  padding: 0;
+
+} */
+
+.hero_wrapper{
+  z-index: -1 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
   min-height: 500px;
   width: 100%;
   box-sizing: border-box;
-  position: absolute;
 
-} */
+}
 
 .hero_image{
   background-image: url("../assets/black-school-stock.jpg");
@@ -58,7 +75,24 @@ h1{
   width: 100%;
   box-sizing: border-box;
   float: left;
-  z-index: 99;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero_text_overlay{
+  color: white;
+  position: relative;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  z-index: 1;
+  font-size: 60px;
+  width: 70%;
+  height: 50%;
+  padding: 20px;
+  text-align: center;
 }
 
 .section_height{
@@ -68,19 +102,37 @@ h1{
 
 .main_tagline{
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-align: center;
+  color: #33227F ;
 }
 
-.about_text{
-  padding: 50px;
-  font-size: 18px;
+
+.background-three-mission{
+  background-color: #6D548C;
+}
+.mission_title{
+  margin: 40px;
+  padding-top: 25px;
+  text-align: center;
+  color: white;
+}
+
+.mission_text{
+  padding: 35px;
+  font-size: 22px;
   font-family: Arial, sans-serif;
+  font-style: italic;
+  text-align: center;
+  color: white;
 
 }
 
 h3{
   text-align: center;
+  padding-top: 25px;
+  margin: 100px;
+  color: #0091ea;
 }
 
 .stock_photos{
@@ -92,14 +144,36 @@ h3{
 
 
 .services_subtitles{
-font-size: 18px;
+font-size: 22px;
 text-align: center;
+color: #00c853 ;
 
 }
+
 .services_text{
   font-size: 14px;
   text-align: center;
+
 }
+
+.background-three{
+  background-color: #33227F ;
+}
+
+#programs{
+  color: white;
+}
+
+.card-image{
+  min-width: 200px !important;
+}
+
+.card_title{
+  margin: 0px;
+  padding: 20px;
+  font-size: 26px;
+}
+
 
 .dropdown_button_pos{
   margin: 0 auto;
@@ -130,4 +204,25 @@ text-align: center;
   font-size: 16px;
   padding-left: 100px;
   padding-right: 100px;
+}
+
+.nav_logo_small{
+  height: 3rem;
+  width: 3rem;
+  padding: 5px;
+}
+
+
+
+.subscribe_button_main{
+  color: white;
+  background-color:black;
+  border: 1px solid white;
+  height: 60px;
+  width: 135px;
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
+
+
 }
